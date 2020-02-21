@@ -8,6 +8,7 @@ export const useHttp = () => {
             body = JSON.stringify(body)
             headers['Content-Type'] = 'application/json'
          } 
+         ///fix
          const response = await fetch(`http://localhost${url}`, {method, body, headers})
          const data = await response.json();
 
