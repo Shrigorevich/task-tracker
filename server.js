@@ -13,7 +13,7 @@ app.use(cors({
 
 app.use('/api', require('./routes/routes.js'))
 
-if(process.env.NODE_ENV === 'prodaction'){
+if(process.env.NODE_ENV === 'production'){
    app.use('/', express.static(path.join(__dirname,  'client', 'build')))
    console.log('prodaction0');
    app.get('*', (req, res) => {  
