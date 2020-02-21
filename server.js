@@ -14,8 +14,8 @@ app.use(cors({
 app.use('/api', require('./routes/routes.js'))
 
 
-app.use('/', express.static(path.join(__dirname,  'client', 'build')))
-console.log('prodaction0');
+app.use('/', express.static('client/build'))
+
 app.get('*', (req, res) => {  
    console.log('prodaction1');
    
