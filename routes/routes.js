@@ -3,9 +3,9 @@ const router = Router()
 const mysql = require('mysql2')
 const connection = mysql.createConnection({
     host: 'us-cdbr-iron-east-04.cleardb.net',
-    user: 'bcdadf64e640cf',
-    database: 'heroku_9899c4b108068dd',
-    password: 'e4d50f6d'
+    user: 'b20ad63dce4be1',
+    database: 'heroku_72c8db4b23b018f',
+    password: '25145e49'
   });
 
 connection.query('CREATE TABLE IF NOT EXISTS "ttracker"."tasks" ("id" INT NOT NULL AUTO_INCREMENT, "title" TEXT NULL DEFAULT NULL, "description" LONGTEXT NULL DEFAULT NULL,"status" TINYTEXT NULL DEFAULT NULL,"performer" LONGTEXT NULL DEFAULT NULL,PRIMARY KEY ("id")) ENGINE = InnoDB AUTO_INCREMENT = 47 DEFAULT CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci', (err, result, fields) => {
