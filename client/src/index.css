@@ -1,0 +1,177 @@
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 1168px;
+  max-width: 1700px;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  color: #dce3dc;
+  margin: 0;
+  background-color: #299929;
+  padding: 15px 0 15px 0;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+}
+.nav-item{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.lside{
+  width: 300px;
+  border-right: 1px solid #000;
+  height:100vh;
+  position: sticky;
+  top: 0;
+  overflow: scroll;
+}
+h5{
+  margin: 0;
+  padding: 0;
+}
+.lsideHead{
+  padding: 15px 15px 15px 15px;
+  background-color: #69de69;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #313331;
+}
+.list{
+  padding: 0 15px 0 15px;
+}
+.showList{
+  cursor: pointer;
+}
+.tasklist{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.taskCard{
+  background-color: #95e595;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.body{
+  width: calc(100vw - 700px);
+  min-width: 478px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 20px;
+}
+.input{
+  margin: 0px 0px 15px 0px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none;
+}
+.rside{
+  width: 400px;
+  border-left: 1px solid #000;
+  height:100vh;
+  position: sticky;
+  top: 0;
+}
+.rsideHead{
+  border-bottom: 1px solid #000;
+  background-color: #69de69;
+  color: #2c322c;
+}
+.listElem{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #299929;
+  border-radius: 10px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 10px;
+}
+.listElemSM{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #299929;
+  border-radius: 10px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 10px 2px #299929;
+}
+textarea{
+  resize: none;
+  height: 150px;
+  padding: 3px 7px 3px 7px;
+}
+.perfIcon{
+  color: #363f36;
+}
+.add{
+  width: 50%;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+.settings{
+  cursor: pointer;
+  visibility: hidden;
+  margin-right: 20px;
+}
+a{
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+  color: #000;
+}
+.listElem:hover .settings{
+  visibility: visible;
+}
+.taskCard:hover .settings{
+  visibility: visible;
+}
+.performer{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+.notFound{
+  margin-top: 15px;
+  text-align: center;
+  color: red ;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #69de69;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2f9b2f; 
+}
