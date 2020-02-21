@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
 
 
 
-  connection.query('CREATE TABLE IF NOT EXISTS `ttracker`.`users` (`id` INT NOT NULL AUTO_INCREMENT,`first_name` TINYTEXT NULL DEFAULT NULL,`last_name` TINYTEXT NULL DEFAULT NULL,`position` TEXT NULL DEFAULT NULL,PRIMARY KEY (`id`)) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARACTER SET = utf8mb4', (err, result, fields) => {
+  connection.query('CREATE TABLE IF NOT EXISTS `heroku_72c8db4b23b018f`.`users` (`id` INT NOT NULL AUTO_INCREMENT,`first_name` TINYTEXT NULL DEFAULT NULL,`last_name` TINYTEXT NULL DEFAULT NULL,`position` TEXT NULL DEFAULT NULL,PRIMARY KEY (`id`)) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARACTER SET = utf8mb4', (err, result, fields) => {
     if(err){
         console.log(err);
     }else{
