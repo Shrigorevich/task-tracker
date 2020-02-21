@@ -13,14 +13,14 @@ app.use(cors({
 
 app.use('/api', require('./routes/routes.js'))
 
-if(process.env.NODE_ENV === 'production'){
-   app.use('/', express.static(path.join(__dirname,  'client', 'build')))
-   console.log('prodaction0');
-   app.get('*', (req, res) => {  
-      console.log('prodaction1');
-      
-      res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-   });
-}
+
+app.use('/', express.static(path.join(__dirname,  'client', 'build')))
+console.log('prodaction0');
+app.get('*', (req, res) => {  
+   console.log('prodaction1');
+   
+   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
+
 
 app.listen(PORT, () => console.log(`App has been started on ${PORT}`))
