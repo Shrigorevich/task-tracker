@@ -9,7 +9,7 @@ export const useHttp = () => {
             headers['Content-Type'] = 'application/json'
          } 
          ///fix
-         const response = await fetch(`http://localhost${url}`, {method, body, headers})
+         const response = await fetch(`http://eidea-task-tracker.herokuapp.com${url}`, {method, body, headers})
          const data = await response.json();
 
          if (!response.ok){
